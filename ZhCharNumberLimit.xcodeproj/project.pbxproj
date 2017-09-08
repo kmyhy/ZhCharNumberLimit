@@ -13,6 +13,11 @@
 		1202831F1F614D6D002A33F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1202831D1F614D6D002A33F2 /* Main.storyboard */; };
 		120283211F614D6D002A33F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120283201F614D6D002A33F2 /* Assets.xcassets */; };
 		120283241F614D6D002A33F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120283221F614D6D002A33F2 /* LaunchScreen.storyboard */; };
+		120283311F614D76002A33F2 /* UITextField+TextChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1202832C1F614D76002A33F2 /* UITextField+TextChange.m */; };
+		120283321F614D76002A33F2 /* UITextView+TextChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 1202832E1F614D76002A33F2 /* UITextView+TextChange.m */; };
+		120283331F614D76002A33F2 /* ZhCharNumberLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 120283301F614D76002A33F2 /* ZhCharNumberLimit.m */; };
+		120283361F614F73002A33F2 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 120283351F614F73002A33F2 /* MBProgressHUD+Add.m */; };
+		F09E961A332215C01385B913 /* libPods-ZhCharNumberLimit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0324A59A742E2737F8AFEE4 /* libPods-ZhCharNumberLimit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		120283201F614D6D002A33F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		120283231F614D6D002A33F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		120283251F614D6D002A33F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1202832B1F614D76002A33F2 /* UITextField+TextChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TextChange.h"; sourceTree = "<group>"; };
+		1202832C1F614D76002A33F2 /* UITextField+TextChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TextChange.m"; sourceTree = "<group>"; };
+		1202832D1F614D76002A33F2 /* UITextView+TextChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+TextChange.h"; sourceTree = "<group>"; };
+		1202832E1F614D76002A33F2 /* UITextView+TextChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TextChange.m"; sourceTree = "<group>"; };
+		1202832F1F614D76002A33F2 /* ZhCharNumberLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhCharNumberLimit.h; sourceTree = "<group>"; };
+		120283301F614D76002A33F2 /* ZhCharNumberLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhCharNumberLimit.m; sourceTree = "<group>"; };
+		120283341F614F73002A33F2 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		120283351F614F73002A33F2 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		1B9CDCA268DF708EADF91078 /* Pods-ZhCharNumberLimit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhCharNumberLimit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhCharNumberLimit/Pods-ZhCharNumberLimit.release.xcconfig"; sourceTree = "<group>"; };
+		6048EE6B0C9EEFFDBB763EF7 /* Pods-ZhCharNumberLimit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhCharNumberLimit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhCharNumberLimit/Pods-ZhCharNumberLimit.debug.xcconfig"; sourceTree = "<group>"; };
+		E0324A59A742E2737F8AFEE4 /* libPods-ZhCharNumberLimit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhCharNumberLimit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09E961A332215C01385B913 /* libPods-ZhCharNumberLimit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				120283131F614D6D002A33F2 /* ZhCharNumberLimit */,
 				120283121F614D6D002A33F2 /* Products */,
+				4E3212E4E4F891B4C58F8C70 /* Pods */,
+				6405BA21EA1CE707681C52EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,14 @@
 		120283131F614D6D002A33F2 /* ZhCharNumberLimit */ = {
 			isa = PBXGroup;
 			children = (
+				1202832B1F614D76002A33F2 /* UITextField+TextChange.h */,
+				1202832C1F614D76002A33F2 /* UITextField+TextChange.m */,
+				1202832D1F614D76002A33F2 /* UITextView+TextChange.h */,
+				1202832E1F614D76002A33F2 /* UITextView+TextChange.m */,
+				120283341F614F73002A33F2 /* MBProgressHUD+Add.h */,
+				120283351F614F73002A33F2 /* MBProgressHUD+Add.m */,
+				1202832F1F614D76002A33F2 /* ZhCharNumberLimit.h */,
+				120283301F614D76002A33F2 /* ZhCharNumberLimit.m */,
 				120283171F614D6D002A33F2 /* AppDelegate.h */,
 				120283181F614D6D002A33F2 /* AppDelegate.m */,
 				1202831A1F614D6D002A33F2 /* ViewController.h */,
@@ -79,6 +106,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4E3212E4E4F891B4C58F8C70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6048EE6B0C9EEFFDBB763EF7 /* Pods-ZhCharNumberLimit.debug.xcconfig */,
+				1B9CDCA268DF708EADF91078 /* Pods-ZhCharNumberLimit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6405BA21EA1CE707681C52EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0324A59A742E2737F8AFEE4 /* libPods-ZhCharNumberLimit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 120283281F614D6D002A33F2 /* Build configuration list for PBXNativeTarget "ZhCharNumberLimit" */;
 			buildPhases = (
+				A57840709B94EF3D3843C74B /* [CP] Check Pods Manifest.lock */,
 				1202830D1F614D6D002A33F2 /* Sources */,
 				1202830E1F614D6D002A33F2 /* Frameworks */,
 				1202830F1F614D6D002A33F2 /* Resources */,
+				1168BD04F470469C94B6C64D /* [CP] Embed Pods Frameworks */,
+				411C5B8AE083B479E4034167 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +193,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1168BD04F470469C94B6C64D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhCharNumberLimit/Pods-ZhCharNumberLimit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		411C5B8AE083B479E4034167 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhCharNumberLimit/Pods-ZhCharNumberLimit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A57840709B94EF3D3843C74B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1202830D1F614D6D002A33F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				120283311F614D76002A33F2 /* UITextField+TextChange.m in Sources */,
+				120283361F614F73002A33F2 /* MBProgressHUD+Add.m in Sources */,
 				1202831C1F614D6D002A33F2 /* ViewController.m in Sources */,
+				120283331F614D76002A33F2 /* ZhCharNumberLimit.m in Sources */,
 				120283191F614D6D002A33F2 /* AppDelegate.m in Sources */,
+				120283321F614D76002A33F2 /* UITextView+TextChange.m in Sources */,
 				120283161F614D6D002A33F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +370,7 @@
 		};
 		120283291F614D6D002A33F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6048EE6B0C9EEFFDBB763EF7 /* Pods-ZhCharNumberLimit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5SU5K229BA;
@@ -283,6 +383,7 @@
 		};
 		1202832A1F614D6D002A33F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9CDCA268DF708EADF91078 /* Pods-ZhCharNumberLimit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5SU5K229BA;
@@ -312,6 +413,7 @@
 				1202832A1F614D6D002A33F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

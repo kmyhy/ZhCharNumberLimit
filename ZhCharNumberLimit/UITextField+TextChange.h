@@ -15,6 +15,6 @@
 @end
 
 @interface UITextField (TextChange)
-@property(weak,nonatomic)id<TextFieldChangeDelegate> textChangeDelegate;
+@property(strong,nonatomic)id<TextFieldChangeDelegate> textChangeDelegate;
 
 @end

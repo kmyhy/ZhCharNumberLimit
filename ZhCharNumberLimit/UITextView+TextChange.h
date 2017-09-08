@@ -17,6 +17,6 @@
 
 @interface UITextView (TextChange)
 
-@property(weak,nonatomic)id<TextViewChangeDelegate> textChangeDelegate;
+@property(strong,nonatomic)id<TextViewChangeDelegate> textChangeDelegate;
 
 @end

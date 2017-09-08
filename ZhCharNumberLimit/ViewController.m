@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "UITextField+TextChange.h"
-#import "UITextView+TextChange.h"
 #import "ZhCharNumberLimit.h"
 #import "MBProgressHUD+Add.h"
 

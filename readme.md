@@ -1,6 +1,6 @@
 # 实现中文输入法下的字数限制
 
-实现中文输入法下 UITextField/UITextView 的字数精确限制。但用户在 TextField/TextView 中输入的字数（中文或英文）超过限制时，多余的字符将被删除并根据你的需求给与友好提示：
+实现中文输入法下 UITextField/UITextView 的字数精确限制。当用户在 TextField/TextView 中输入的字数（中文或英文）超过限制时，多余的字符将被删除并根据你的需求给与友好提示：
 
 <img src="1.png" width="200"/>
 

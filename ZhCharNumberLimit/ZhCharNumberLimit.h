@@ -12,9 +12,14 @@
 #import "UITextField+TextChange.h"
 #import "UITextView+TextChange.h"
 
+@class ZhCharNumberLimit;
+
 @protocol ZhCharNumberLimitDelegate <NSObject>
 
--(void)exceedLimit:(int)charLimited;
+-(void)exceedLimit:(ZhCharNumberLimit*)limit sender:(id)sender;// 超过字数限制
+
+@optional
+-(void)notExceedLimit:(ZhCharNumberLimit*)limit sender:(id)sender;// 未超过字数限制
 
 @end
 

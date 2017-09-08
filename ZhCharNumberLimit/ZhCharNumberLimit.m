@@ -33,7 +33,11 @@
         if (!position) {
             if (toBeString.length > _charLimited) {
                 textField.text = [toBeString substringToIndex:_charLimited];
-                [_delegate exceedLimit:_charLimited];
+                [_delegate exceedLimit:self sender:textField];
+            }else{
+                if([_delegate respondsToSelector:@selector(notExceedLimit:sender:)]){
+                    [_delegate notExceedLimit:self sender:textField];
+                }
             }
         }
         // 有高亮选择的字符串，则暂不对文字进行统计和限制
@@ -45,7 +49,11 @@
     else{
         if (toBeString.length > _charLimited) {
             textField.text = [toBeString substringToIndex:_charLimited];
-            [_delegate exceedLimit:_charLimited];
+            [_delegate exceedLimit:self sender:textField];
+        }else{
+            if([_delegate respondsToSelector:@selector(notExceedLimit:sender:)]){
+                [_delegate notExceedLimit:self sender:textField];
+            }
         }
     }
     NSLog(@"%@",textField.text);
@@ -66,7 +74,11 @@
         if (!position) {
             if (toBeString.length > _charLimited) {
                 textView.text = [toBeString substringToIndex:_charLimited];
-                [_delegate exceedLimit:_charLimited];
+                [_delegate exceedLimit:self sender:textView];
+            }else{
+                if([_delegate respondsToSelector:@selector(notExceedLimit:sender:)]){
+                    [_delegate notExceedLimit:self sender:textView];
+                }
             }
         }
         // 有高亮选择的字符串，则暂不对文字进行统计和限制
@@ -78,7 +90,11 @@
     else{
         if (toBeString.length > _charLimited) {
             textView.text = [toBeString substringToIndex:_charLimited];
-            [_delegate exceedLimit:_charLimited];
+            [_delegate exceedLimit:self sender:textView];
+        }else{
+            if([_delegate respondsToSelector:@selector(notExceedLimit:sender:)]){
+                [_delegate notExceedLimit:self sender:textView];
+            }
         }
     }
     NSLog(@"%@",textView.text);

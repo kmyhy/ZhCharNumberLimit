@@ -38,8 +38,8 @@
 }
 
 // MARK: - ZhCharNumberLimitDelegate
--(void)exceedLimit:(int)charLimited{
-    NSString * string = [NSString stringWithFormat:@"节目名称不能超过%d字",charLimited];
+-(void)exceedLimit:(ZhCharNumberLimit*)limit sender:(id)sender{
+    NSString * string = [NSString stringWithFormat:@"节目名称不能超过%d字",limit.charLimited];
     [MBProgressHUD showError:string toView:self.view];
 }
 
